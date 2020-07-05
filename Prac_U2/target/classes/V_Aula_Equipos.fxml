@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upv.app.Controller">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="493.0" prefWidth="951.0" style="-fx-background-color: #ffff;">
+                <children>
+                    <Label layoutX="38.0" layoutY="21.0" prefHeight="37.0" prefWidth="205.0" style="-fx-background-color: #9243C0;" text=" Aula_Equipos" textAlignment="RIGHT" textFill="WHITE">
+                        <font>
+                            <Font name="Abyssinica SIL" size="29.0" />
+                        </font>
+                    </Label>
+                    <TableView fx:id="Tbl_Aula_Equipos" layoutX="237.0" layoutY="21.0" prefHeight="469.0" prefWidth="712.0" style="-fx-border-color: #9243C0;">
+                        <columns>
+                            <TableColumn fx:id="C_ID_Equipo" prefWidth="192.0" text="ID_Equipo" />
+                            <TableColumn fx:id="C_Aula_ID" prefWidth="267.0" text="ID_Aula" />
+                            <TableColumn fx:id="C_Cantidad" prefWidth="250.0" text="Cantidad" />
+                        </columns>
+                    </TableView>
+                    <Button layoutX="82.0" layoutY="352.0" mnemonicParsing="false" onAction="#BAula_Eq_Agregar" prefHeight="32.0" prefWidth="88.0" style="-fx-background-color: #9243C0;" text="Agregar" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="13.0" />
+                        </font></Button>
+                    <Button layoutX="82.0" layoutY="394.0" mnemonicParsing="false" onAction="#BAula_Eq__Eliminar" prefHeight="32.0" prefWidth="88.0" style="-fx-background-color: #9243C0;" text="Eliminar" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="13.0" />
+                        </font></Button>
+                    <Button layoutX="82.0" layoutY="438.0" mnemonicParsing="false" onAction="#BAula_Eq__Modificar" prefHeight="32.0" prefWidth="88.0" style="-fx-background-color: #9243C0;" text="Modificar" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="13.0" />
+                        </font></Button>
+                    <TextField fx:id="T_ID_Equipo" layoutX="52.0" layoutY="90.0" promptText="Equipo" style="-fx-border-color: #9243C0;" />
+                    <TextField fx:id="T_ID_Materia" layoutX="52.0" layoutY="134.0" promptText="Materia" style="-fx-border-color: #9243C0;" />
+                    <TextField fx:id="T_Cantidad" layoutX="52.0" layoutY="178.0" promptText="Cantidad" style="-fx-border-color: #9243C0;" />
+                   
+                    <Button fx:id="B_Regresa" layoutY="19.0" mnemonicParsing="false" onAction="#B_Back" prefHeight="31.0" prefWidth="42.0" style="-fx-background-color: #555356; -fx-border-color: #ffff;" text="&lt;" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="19.0" />
+                        </font>
+                    </Button>
+                </children>
+            </AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

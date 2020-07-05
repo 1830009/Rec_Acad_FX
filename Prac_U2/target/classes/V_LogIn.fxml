@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upv.app.Controller">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="399.0" prefWidth="511.0" style="-fx-background-color: #8A0886;">
+                <children>
+                    <ImageView fitHeight="347.0" fitWidth="601.0" layoutX="-1.0" layoutY="3.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+                    <AnchorPane layoutX="12.0" layoutY="50.0" opacity="0.85" prefHeight="286.0" prefWidth="574.0" style="-fx-background-color: #ffffff; -fx-border-color: #8A0886;">
+                        <children>
+                            <TextField fx:id="T_Usuario" layoutX="192.0" layoutY="65.0" style="-fx-border-color: #8A0886;" />
+                            <Button fx:id="B_logIn" layoutX="257.0" layoutY="214.0" mnemonicParsing="false" onAction="#B_LogIn" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: #ffff; -fx-border-color: #8A0886; -fx-border-width: 3;" text="OK">
+                                <font>
+                                    <Font name="System Bold" size="13.0" />
+                                </font></Button>
+                            <Label layoutX="244.0" layoutY="40.0" text="Usuario:">
+                                <font>
+                                    <Font name="Ubuntu Bold" size="19.0" />
+                                </font></Label>
+                            <Label layoutX="224.0" layoutY="132.0" text="Contraseña:">
+                                <font>
+                                    <Font name="Ubuntu Bold" size="19.0" />
+                                </font></Label>
+                            <PasswordField fx:id="T_Pass" layoutX="192.0" layoutY="156.0" style="-fx-border-color: #8A0886;" />
+                        </children>
+                    </AnchorPane>
+                    <Label layoutX="-1.0" layoutY="14.0" prefHeight="36.0" prefWidth="600.0" style="-fx-background-color: #8A0886;" text="      Sistema de Horarios UPV" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                            <Font name="Abyssinica SIL" size="35.0" />
+                        </font>
+                    </Label>
+                </children>
+            </AnchorPane>
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.5411764979362488" green="0.0313725508749485" blue="0.5254902243614197" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="1.0" green="1.0" blue="1.0" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Scene>
+    </scene>
+</Stage>
